@@ -1,0 +1,18 @@
+User-Agent: *
+Disallow: /page32394361.html
+Disallow: /page32394390.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://ogonek59.ru/sitemap.xml
+Sitemap: https://ogonek59.ru/sitemap-feeds.xml
+Host: https://ogonek59.ru

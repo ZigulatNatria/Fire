@@ -1,0 +1,37 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page32298662.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://ogonek59\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.ogonek59.ru [NC]
+RewriteRule ^(.*)$ https://ogonek59\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^freestyle$ page32394306.html [NC]
+RewriteRule ^freestyle/$ page32394306.html [NC]
+
+RewriteRule ^skiing$ page32400116.html [NC]
+RewriteRule ^skiing/$ page32400116.html [NC]
+
+RewriteRule ^luge$ page32400411.html [NC]
+RewriteRule ^luge/$ page32400411.html [NC]
+
+RewriteRule ^snowboard$ page32404746.html [NC]
+RewriteRule ^snowboard/$ page32404746.html [NC]
+
+RewriteRule ^tourism$ page32402206.html [NC]
+RewriteRule ^tourism/$ page32402206.html [NC]
+
+RewriteRule ^documentation$ page32404925.html [NC]
+RewriteRule ^documentation/$ page32404925.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3933-3066-4462-a365-616238643166/f.ico [R=302,L]
+

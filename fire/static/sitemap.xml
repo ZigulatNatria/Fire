@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>https://ogonek59.ru/</loc>
+		<lastmod>2023-01-13T16:33:35+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/freestyle</loc>
+		<lastmod>2023-01-13T16:22:58+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/skiing</loc>
+		<lastmod>2022-12-27T15:45:13+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/luge</loc>
+		<lastmod>2023-01-13T16:11:56+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/snowboard</loc>
+		<lastmod>2022-12-27T15:45:14+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/tourism</loc>
+		<lastmod>2022-12-27T15:45:14+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://ogonek59.ru/documentation</loc>
+		<lastmod>2022-12-27T15:45:14+00:00</lastmod>
+	</url>
+</urlset>
