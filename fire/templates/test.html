@@ -1,0 +1,12 @@
+<p>{{ sport.name }}</p>
+{% for d in discipline %}
+<p>{{ d.name }}</p>
+{% endfor %}
+{% for p in progress %}
+<p>{{ p.athlete }}</p>
+<p>{{ p.description }}</p>
+<img src="{{MEDIA_URL}}{{p.image.url}}">
+{% endfor %}
+{% for t in trainer %}
+<p>{{ t.name }}</p>
+{% endfor %}
