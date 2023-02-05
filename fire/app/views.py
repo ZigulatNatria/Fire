@@ -14,4 +14,4 @@ def sports(request, sport_id):
                'trainer': trainer,
                }
     # return render(request, 'page32394306.html', context)
-    return render(request, 'test.html', context)
+    return render(request, 'freestyle.html', context)
