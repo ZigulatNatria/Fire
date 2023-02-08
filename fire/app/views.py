@@ -14,5 +14,5 @@ def sports(request, sport_id):
                'progress': progress,
                'trainer': trainer,
                }
-    return render(request, 'test.html', context)
-    # return render(request, 'freestyle.html', context)
+    # return render(request, 'test.html', context)
+    return render(request, 'freestyle.html', context)

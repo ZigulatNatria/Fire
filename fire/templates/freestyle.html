@@ -61,7 +61,8 @@ setTimeout(function() {
 t_onFuncLoad(funcName, okFunc, time);
 },(time || 100));
 }
-}function t_throttle(fn, threshhold, scope) {return function () {fn.apply(scope || this, arguments);};}function t396_initialScale(t){var e=document.getElementById("rec"+t);if(e){var r=e.querySelector(".t396__artboard");if(r){var a,i=document.documentElement.clientWidth,l=[],d=r.getAttribute("data-artboard-screens");if(d){d=d.split(",");for(var o=0;o<d.length;o++)l[o]=parseInt(d[o],10)}else l=[320,480,640,960,1200];for(o=0;o<l.length;o++){var n=l[o];n<=i&&(a=n)}var g="edit"===window.allrecords.getAttribute("data-tilda-mode"),u="center"===t396_getFieldValue(r,"valign",a,l),c="grid"===t396_getFieldValue(r,"upscale",a,l),t=t396_getFieldValue(r,"height_vh",a,l),f=t396_getFieldValue(r,"height",a,l),e=!!window.opr&&!!window.opr.addons||!!window.opera||-1!==navigator.userAgent.indexOf(" OPR/");if(!g&&u&&!c&&!t&&f&&!e){for(var s=parseFloat((i/a).toFixed(3)),_=[r,r.querySelector(".t396__carrier"),r.querySelector(".t396__filter")],o=0;o<_.length;o++)_[o].style.height=parseInt(f,10)*s+"px";for(var h=r.querySelectorAll(".t396__elem"),o=0;o<h.length;o++)h[o].style.zoom=s}}}}function t396_getFieldValue(t,e,r,a){var i=a[a.length-1],l=r===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+r);if(!l)for(var d=0;d<a.length;d++){var o=a[d];if(!(o<=r)&&(l=o===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+o)))break}return l}</script>
+}function t_throttle(fn, threshhold, scope) {return function () {fn.apply(scope || this, arguments);};}function t396_initialScale(t){var e=document.getElementById("rec"+t);if(e){var r=e.querySelector(".t396__artboard");if(r){var a,i=document.documentElement.clientWidth,l=[],d=r.getAttribute("data-artboard-screens");if(d){d=d.split(",");for(var o=0;o<d.length;o++)l[o]=parseInt(d[o],10)}else l=[320,480,640,960,1200];for(o=0;o<l.length;o++){var n=l[o];n<=i&&(a=n)}var g="edit"===window.allrecords.getAttribute("data-tilda-mode"),u="center"===t396_getFieldValue(r,"valign",a,l),c="grid"===t396_getFieldValue(r,"upscale",a,l),t=t396_getFieldValue(r,"height_vh",a,l),f=t396_getFieldValue(r,"height",a,l),e=!!window.opr&&!!window.opr.addons||!!window.opera||-1!==navigator.userAgent.indexOf(" OPR/");if(!g&&u&&!c&&!t&&f&&!e){for(var s=parseFloat((i/a).toFixed(3)),_=[r,r.querySelector(".t396__carrier"),r.querySelector(".t396__filter")],o=0;o<_.length;o++)_[o].style.height=parseInt(f,10)*s+"px";for(var h=r.querySelectorAll(".t396__elem"),o=0;o<h.length;o++)h[o].style.zoom=s}}}}function t396_getFieldValue(t,e,r,a){var i=a[a.length-1],l=r===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+r);if(!l)for(var d=0;d<a.length;d++){var o=a[d];if(!(o<=r)&&(l=o===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+o)))break}return l}
+</script>
     <script src="{% static 'js/jquery-1.10.2.min.js' %}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <script src="{% static 'js/tilda-scripts-3.0.min.js' %}" charset="utf-8" defer onerror="this.loaderr='y';"></script>
     <script src="{% static 'js/tilda-blocks-page32394306.min.js' %}" charset="utf-8" async onerror="this.loaderr='y';"></script>
@@ -97,7 +98,25 @@ sessionStorage.setItem("visited", "y");
 } 
 document.addEventListener('DOMContentLoaded', t_setvisRecs);
 }
-})();</script></head><body class="t-body" style="margin:0;"><!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6459187" data-tilda-page-id="32394306" data-tilda-page-alias="freestyle" data-tilda-formskey="1c34d4956344ede1a3cba193d6459187" data-tilda-lazy="yes"><!--header--><div id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6459187" data-tilda-page-id="32394361" data-tilda-formskey="1c34d4956344ede1a3cba193d6459187" data-tilda-lazy="yes"><div id="rec523618955" class="r t-rec t-screenmin-1200px" style=" " data-animationappear="off" data-record-type="257" data-screen-min="1200px" ><!-- T228 --><div id="nav523618955marker"></div><div id="nav523618955" class="t228 t228__positionfixed " style="background-color: rgba(230,233,235,0.0); " data-bgcolor-hex="#e6e9eb" data-bgcolor-rgba="rgba(230,233,235,0.0)" data-navmarker="nav523618955marker" data-appearoffset="" data-bgopacity-two="100" data-menushadow="" data-bgopacity="0.0" data-bgcolor-rgba-afterscroll="rgba(230,233,235,1)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="/" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo t228__imglogomobile" 
+})();</script>
+</head>
+<body class="t-body" style="margin:0;">
+<!--allrecords-->
+<div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6459187" data-tilda-page-id="32394306" data-tilda-page-alias="freestyle" data-tilda-formskey="1c34d4956344ede1a3cba193d6459187" data-tilda-lazy="yes">
+    <!--header-->
+    <div id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6459187" data-tilda-page-id="32394361" data-tilda-formskey="1c34d4956344ede1a3cba193d6459187" data-tilda-lazy="yes">
+        <div id="rec523618955" class="r t-rec t-screenmin-1200px" style=" " data-animationappear="off" data-record-type="257" data-screen-min="1200px" >
+            <!-- T228 -->
+            <div id="nav523618955marker">
+            </div>
+            <div id="nav523618955" class="t228 t228__positionfixed " style="background-color: rgba(230,233,235,0.0); " data-bgcolor-hex="#e6e9eb" data-bgcolor-rgba="rgba(230,233,235,0.0)" data-navmarker="nav523618955marker" data-appearoffset="" data-bgopacity-two="100" data-menushadow="" data-bgopacity="0.0" data-bgcolor-rgba-afterscroll="rgba(230,233,235,1)" data-menu-items-align="center" data-menu="yes">
+                <div class="t228__maincontainer " style="">
+                    <div class="t228__padding40px">
+                    </div>
+                    <div class="t228__leftside">
+                        <div class="t228__leftcontainer">
+                            <a href="/" class="t228__imgwrapper" style="color:#ffffff;">
+                                <img class="t228__imglogo t228__imglogomobile"
 src="{% static 'images/tild3463-3632-4666-a136-303338646539__group_2622.svg' %}"
 imgfield="img"
 style="max-width: 35px; width: 35px; min-width: 35px; height: auto; display: block;"
@@ -657,119 +676,289 @@ t_onReady(function () {
 t_onFuncLoad('t396_init', function () {
 t396_init('523618183');
 });
-});</script><!-- /T396 --></div><div id="rec523673206" class="r t-rec" style=" " data-animationappear="off" data-record-type="396" ><!-- T396 --><style>#rec523673206 .t396__artboard {height: 760px; background-color: #ffffff; }#rec523673206 .t396__filter {height: 760px; }#rec523673206 .t396__carrier{height: 760px; background-position: center center; background-attachment: scroll;background-image: url({%static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %});background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523673206 .t396__artboard {height: 670px;}#rec523673206 .t396__filter {height: 670px;}#rec523673206 .t396__carrier {height: 670px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523673206 .t396__artboard {height: 860px;}#rec523673206 .t396__filter {height: 860px;}#rec523673206 .t396__carrier {height: 860px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523673206 .t396__artboard {height: 750px;}#rec523673206 .t396__filter {height: 750px;}#rec523673206 .t396__carrier {height: 750px;background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523673206 .t396__artboard {height: 830px;}#rec523673206 .t396__filter {height: 830px;}#rec523673206 .t396__carrier {height: 830px;background-attachment: scroll;}} #rec523673206 .tn-elem[data-elem-id="1670334481844"] { z-index: 1; top: 275px;left: calc(50% - 600px + 20px);width: 360px;}#rec523673206 .tn-elem[data-elem-id="1670334481844"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 290px;left: calc(50% - 480px + 10px);width: 300px;}}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 492px;left: calc(50% - 320px + 10px);width: 300px;}}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 464px;left: calc(50% - 240px + 10px);width: 220px;}}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 60px;left: calc(50% - 160px + 710px);width: 140px;}} #rec523673206 .tn-elem[data-elem-id="1670334481851"] { z-index: 2; top: 275px;left: calc(50% - 600px + 420px);width: 360px;}#rec523673206 .tn-elem[data-elem-id="1670334481851"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 290px;left: calc(50% - 480px + 330px);width: 300px;}}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 492px;left: calc(50% - 320px + 330px);width: 300px;}}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 464px;left: calc(50% - 240px + 250px);width: 220px;}}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 466px;left: calc(50% - 160px + 10px);width: 300px;}} #rec523673206 .tn-elem[data-elem-id="1670334481856"] { color: #e6e9eb; z-index: 3; top: 140px;left: calc(50% - 600px + 820px);width: 356px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { color: #e6e9eb; font-size: 18px; font-family: 'Roboto',Arial,sans-serif; line-height: 1.3; font-weight: 300; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 96px;left: calc(50% - 480px + 650px);width: 300px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 200px;left: calc(50% - 320px + 10px);width: 582px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 190px;left: calc(50% - 240px + 10px);width: 451px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 14px; }}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 154px;left: calc(50% - 160px + 9px);width: 300px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 12px; }} #rec523673206 .tn-elem[data-elem-id="1670334481859"] { color: #e6e9eb; z-index: 4; top: 98px;left: calc(50% - 600px + 15px);width: 560px;}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { color: #e6e9eb; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1.55; font-weight: 400; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 60px;left: calc(50% - 480px + 6px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 320px + 7px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 90px; line-height: 1; }}@media screen and (max-width: 639px) {}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 160px + 8px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 60px; }}</style><div class='t396'><div class="t396__artboard" data-artboard-recid="523673206" data-artboard-screens="320,480,640,960,1200" data-artboard-height="760" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="830" data-artboard-upscale-res-320="window" data-artboard-height-res-480="750" data-artboard-height-res-640="860" data-artboard-height-res-960="670"
-><div class="t396__carrier t-bgimg" data-artboard-recid="523673206" src="{% static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %}"></div><div class="t396__filter" data-artboard-recid="523673206"></div><div class='t396__elem tn-elem tn-elem__5236732061670334481844' data-elem-id='1670334481844' data-elem-type='image' data-field-top-value="275" data-field-left-value="20" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="60" data-field-left-res-320-value="710" data-field-width-res-320-value="140" data-field-top-res-480-value="464" data-field-left-res-480-value="10" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="10" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="10" data-field-width-res-960-value="300"
-><div class='tn-atom' ><img class='tn-atom__img t-img' src="{% static 'images/tild6364-6539-4464-b961-376237613038__rectangle_108.jpg' %}" imgfield='tn_img_1670334481844'></div></div> <div class='t396__elem tn-elem tn-elem__5236732061670334481851' data-elem-id='1670334481851' data-elem-type='image' data-field-top-value="275" data-field-left-value="420" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="466" data-field-left-res-320-value="10" data-field-width-res-320-value="300" data-field-top-res-480-value="464" data-field-left-res-480-value="250" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="330" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="330" data-field-width-res-960-value="300"
-><div class='tn-atom' ><img class='tn-atom__img t-img' src="{% static 'images/tild3234-6338-4963-b533-366261303664__rectangle_114.jpg' %}" imgfield='tn_img_1670334481851'></div></div> <div class='t396__elem tn-elem tn-elem__5236732061670334481856' data-elem-id='1670334481856' data-elem-type='text' data-field-top-value="140" data-field-left-value="820" data-field-width-value="356" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="154" data-field-left-res-320-value="9" data-field-width-res-320-value="300" data-field-top-res-480-value="190" data-field-left-res-480-value="10" data-field-width-res-480-value="451" data-field-top-res-640-value="200" data-field-left-res-640-value="10" data-field-width-res-640-value="582" data-field-top-res-960-value="96" data-field-left-res-960-value="650" data-field-width-res-960-value="300"
-><div class='tn-atom'field='tn_text_1670334481856'>Это захватывающая дисциплина горнолыжного спорта, которая предусматривает спуск на&nbsp;горных лыжах по&nbsp;бугристому склону (по&nbsp;буграм) и&nbsp;выполнении прыжков на&nbsp;трамплинах.<br><br>Длина трассы составляет 230—250 метров уклон склона 24—29 градусов. Приземление на&nbsp;трассе могула 15—20 метров расстояние между буграми 3.5—4.0 метра, в&nbsp;среднем спортсмен проходит трассу 24 сек. В истории спортивной школы есть 3 олимпийских призера: Сергей Шуплецов – серебряный призер зимних олимпийских игр 1994 года (Норвегия, Лиллехаммер), Александр Смышляев – бронзовый призер зимних олимпийских игр 2014 года (Россия, Сочи), Анастасия Смирнова – бронзовый призер зимних олимпийских игр 2022 года (Китай, Пекин).</div> </div> <div class='t396__elem tn-elem tn-elem__5236732061670334481859' data-elem-id='1670334481859' data-elem-type='text' data-field-top-value="98" data-field-left-value="15" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="80" data-field-left-res-320-value="8" data-field-top-res-640-value="80" data-field-left-res-640-value="7" data-field-top-res-960-value="60" data-field-left-res-960-value="6" 
-><div class='tn-atom'field='tn_text_1670334481859'>Могул</div> </div> </div> </div> <script>t_onFuncLoad('t396_initialScale', function () {
+});</script>
+    <!-- /T396 -->
+</div>
+
+    <div id="rec523673206" class="r t-rec" style=" " data-animationappear="off" data-record-type="396" >
+        <!-- T396 -->
+        <style>#rec523673206 .t396__artboard {height: 760px; background-color: #ffffff; }#rec523673206 .t396__filter {height: 760px; }#rec523673206 .t396__carrier{height: 760px; background-position: center center; background-attachment: scroll;background-image: url({%static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %});background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523673206 .t396__artboard {height: 670px;}#rec523673206 .t396__filter {height: 670px;}#rec523673206 .t396__carrier {height: 670px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523673206 .t396__artboard {height: 860px;}#rec523673206 .t396__filter {height: 860px;}#rec523673206 .t396__carrier {height: 860px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523673206 .t396__artboard {height: 750px;}#rec523673206 .t396__filter {height: 750px;}#rec523673206 .t396__carrier {height: 750px;background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523673206 .t396__artboard {height: 830px;}#rec523673206 .t396__filter {height: 830px;}#rec523673206 .t396__carrier {height: 830px;background-attachment: scroll;}} #rec523673206 .tn-elem[data-elem-id="1670334481844"] { z-index: 1; top: 275px;left: calc(50% - 600px + 20px);width: 360px;}#rec523673206 .tn-elem[data-elem-id="1670334481844"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 290px;left: calc(50% - 480px + 10px);width: 300px;}}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 492px;left: calc(50% - 320px + 10px);width: 300px;}}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 464px;left: calc(50% - 240px + 10px);width: 220px;}}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481844"] {top: 60px;left: calc(50% - 160px + 710px);width: 140px;}} #rec523673206 .tn-elem[data-elem-id="1670334481851"] { z-index: 2; top: 275px;left: calc(50% - 600px + 420px);width: 360px;}#rec523673206 .tn-elem[data-elem-id="1670334481851"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 290px;left: calc(50% - 480px + 330px);width: 300px;}}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 492px;left: calc(50% - 320px + 330px);width: 300px;}}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 464px;left: calc(50% - 240px + 250px);width: 220px;}}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481851"] {top: 466px;left: calc(50% - 160px + 10px);width: 300px;}} #rec523673206 .tn-elem[data-elem-id="1670334481856"] { color: #e6e9eb; z-index: 3; top: 140px;left: calc(50% - 600px + 820px);width: 356px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { color: #e6e9eb; font-size: 18px; font-family: 'Roboto',Arial,sans-serif; line-height: 1.3; font-weight: 300; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 96px;left: calc(50% - 480px + 650px);width: 300px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 200px;left: calc(50% - 320px + 10px);width: 582px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 639px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 190px;left: calc(50% - 240px + 10px);width: 451px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 14px; }}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481856"] {top: 154px;left: calc(50% - 160px + 9px);width: 300px;}#rec523673206 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 12px; }} #rec523673206 .tn-elem[data-elem-id="1670334481859"] { color: #e6e9eb; z-index: 4; top: 98px;left: calc(50% - 600px + 15px);width: 560px;}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { color: #e6e9eb; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1.55; font-weight: 400; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 60px;left: calc(50% - 480px + 6px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 320px + 7px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 90px; line-height: 1; }}@media screen and (max-width: 639px) {}@media screen and (max-width: 479px) {#rec523673206 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 160px + 8px);}#rec523673206 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 60px; }}</style>
+        <div class='t396'>
+            <div class="t396__artboard" data-artboard-recid="523673206" data-artboard-screens="320,480,640,960,1200" data-artboard-height="760" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="830" data-artboard-upscale-res-320="window" data-artboard-height-res-480="750" data-artboard-height-res-640="860" data-artboard-height-res-960="670">
+                <div class="t396__carrier t-bgimg" data-artboard-recid="523673206" src="{% static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %}"></div>
+                <div class="t396__filter" data-artboard-recid="523673206"></div>
+                <div class='t396__elem tn-elem tn-elem__5236732061670334481844' data-elem-id='1670334481844' data-elem-type='image' data-field-top-value="275" data-field-left-value="20" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="60" data-field-left-res-320-value="710" data-field-width-res-320-value="140" data-field-top-res-480-value="464" data-field-left-res-480-value="10" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="10" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="10" data-field-width-res-960-value="300">
+                    <div class='tn-atom'>
+                        <img class='tn-atom__img t-img' src="{% static 'images/tild6364-6539-4464-b961-376237613038__rectangle_108.jpg' %}" imgfield='tn_img_1670334481844'></div>
+                </div>
+                <div class='t396__elem tn-elem tn-elem__5236732061670334481851' data-elem-id='1670334481851' data-elem-type='image' data-field-top-value="275" data-field-left-value="420" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="466" data-field-left-res-320-value="10" data-field-width-res-320-value="300" data-field-top-res-480-value="464" data-field-left-res-480-value="250" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="330" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="330" data-field-width-res-960-value="300">
+                    <div class='tn-atom' >
+                        <img class='tn-atom__img t-img' src="{% static 'images/tild3234-6338-4963-b533-366261303664__rectangle_114.jpg' %}" imgfield='tn_img_1670334481851'></div>
+                </div>
+                <div class='t396__elem tn-elem tn-elem__5236732061670334481856' data-elem-id='1670334481856' data-elem-type='text' data-field-top-value="140" data-field-left-value="820" data-field-width-value="356" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="154" data-field-left-res-320-value="9" data-field-width-res-320-value="300" data-field-top-res-480-value="190" data-field-left-res-480-value="10" data-field-width-res-480-value="451" data-field-top-res-640-value="200" data-field-left-res-640-value="10" data-field-width-res-640-value="582" data-field-top-res-960-value="96" data-field-left-res-960-value="650" data-field-width-res-960-value="300">
+                    <div class='tn-atom'field='tn_text_1670334481856'>Это захватывающая дисциплина горнолыжного спорта, которая предусматривает спуск на&nbsp;горных лыжах по&nbsp;бугристому склону (по&nbsp;буграм) и&nbsp;выполнении прыжков на&nbsp;трамплинах.<br><br>Длина трассы составляет 230—250 метров уклон склона 24—29 градусов. Приземление на&nbsp;трассе могула 15—20 метров расстояние между буграми 3.5—4.0 метра, в&nbsp;среднем спортсмен проходит трассу 24 сек. В истории спортивной школы есть 3 олимпийских призера: Сергей Шуплецов – серебряный призер зимних олимпийских игр 1994 года (Норвегия, Лиллехаммер), Александр Смышляев – бронзовый призер зимних олимпийских игр 2014 года (Россия, Сочи), Анастасия Смирнова – бронзовый призер зимних олимпийских игр 2022 года (Китай, Пекин).</div>
+                </div>
+                <div class='t396__elem tn-elem tn-elem__5236732061670334481859' data-elem-id='1670334481859' data-elem-type='text' data-field-top-value="98" data-field-left-value="15" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="80" data-field-left-res-320-value="8" data-field-top-res-640-value="80" data-field-left-res-640-value="7" data-field-top-res-960-value="60" data-field-left-res-960-value="6">
+                    <div class='tn-atom'field='tn_text_1670334481859'>Могул</div>
+                </div>
+            </div>
+        </div>
+        <script>t_onFuncLoad('t396_initialScale', function () {
 t396_initialScale('523673206');
 });
 t_onReady(function () {
 t_onFuncLoad('t396_init', function () {
 t396_init('523673206');
 });
-});</script><!-- /T396 --></div><div id="rec523618189" class="r t-rec t-rec_pt_150 t-rec_pt-res-480_90 t-rec_pb_60 t-rec_pb-res-480_30" style="padding-top:150px;padding-bottom:60px; " data-animationappear="off" data-record-type="396" ><!-- T396 --><style>#rec523618189 .t396__artboard {height: 110px;}#rec523618189 .t396__filter {height: 110px; }#rec523618189 .t396__carrier{height: 110px; background-position: center center; background-attachment: scroll;background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523618189 .t396__artboard {height: 90px;}#rec523618189 .t396__filter {height: 90px;}#rec523618189 .t396__carrier {height: 90px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523618189 .t396__artboard {height: 70px;}#rec523618189 .t396__filter {height: 70px;}#rec523618189 .t396__carrier {height: 70px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523618189 .t396__artboard {}#rec523618189 .t396__filter {}#rec523618189 .t396__carrier {background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523618189 .t396__artboard {height: 50px;}#rec523618189 .t396__filter {height: 50px;}#rec523618189 .t396__carrier {height: 50px;background-attachment: scroll;}} #rec523618189 .tn-elem[data-elem-id="1470209944682"] { color: #11374e; z-index: 2; top: -6px;left: calc(50% - 600px + 15px);width: 660px;}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { color: #11374e; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1; font-weight: 700; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -4px;left: calc(50% - 480px + 6px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -3px;left: calc(50% - 320px + 6px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 90px; }}@media screen and (max-width: 639px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -3px;left: calc(50% - 240px + 7px);}}@media screen and (max-width: 479px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -2px;left: calc(50% - 160px + 8px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 60px; }}</style><div class='t396'><div class="t396__artboard" data-artboard-recid="523618189" data-artboard-screens="320,480,640,960,1200" data-artboard-height="110" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="50" data-artboard-upscale-res-320="window" data-artboard-height-res-640="70" data-artboard-height-res-960="90" 
-><div class="t396__carrier" data-artboard-recid="523618189"></div><div class="t396__filter" data-artboard-recid="523618189"></div><div class='t396__elem tn-elem tn-elem__5236181891470209944682' data-elem-id='1470209944682' data-elem-type='text' data-field-top-value="-6" data-field-left-value="15" data-field-width-value="660" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-2" data-field-left-res-320-value="8" data-field-top-res-480-value="-3" data-field-left-res-480-value="7" data-field-top-res-640-value="-3" data-field-left-res-640-value="6" data-field-top-res-960-value="-4" data-field-left-res-960-value="6" 
-><div class='tn-atom'field='tn_text_1470209944682'>достижения</div> </div> </div> </div> <script>t_onFuncLoad('t396_initialScale', function () {
+});</script>
+        <!-- /T396 -->
+    </div>
+    <div id="rec523618189" class="r t-rec t-rec_pt_150 t-rec_pt-res-480_90 t-rec_pb_60 t-rec_pb-res-480_30" style="padding-top:150px;padding-bottom:60px; " data-animationappear="off" data-record-type="396" >
+        <!-- T396 -->
+        <style>#rec523618189 .t396__artboard {height: 110px;}#rec523618189 .t396__filter {height: 110px; }#rec523618189 .t396__carrier{height: 110px; background-position: center center; background-attachment: scroll;background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523618189 .t396__artboard {height: 90px;}#rec523618189 .t396__filter {height: 90px;}#rec523618189 .t396__carrier {height: 90px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523618189 .t396__artboard {height: 70px;}#rec523618189 .t396__filter {height: 70px;}#rec523618189 .t396__carrier {height: 70px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523618189 .t396__artboard {}#rec523618189 .t396__filter {}#rec523618189 .t396__carrier {background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523618189 .t396__artboard {height: 50px;}#rec523618189 .t396__filter {height: 50px;}#rec523618189 .t396__carrier {height: 50px;background-attachment: scroll;}} #rec523618189 .tn-elem[data-elem-id="1470209944682"] { color: #11374e; z-index: 2; top: -6px;left: calc(50% - 600px + 15px);width: 660px;}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { color: #11374e; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1; font-weight: 700; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -4px;left: calc(50% - 480px + 6px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -3px;left: calc(50% - 320px + 6px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 90px; }}@media screen and (max-width: 639px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -3px;left: calc(50% - 240px + 7px);}}@media screen and (max-width: 479px) {#rec523618189 .tn-elem[data-elem-id="1470209944682"] {top: -2px;left: calc(50% - 160px + 8px);}#rec523618189 .tn-elem[data-elem-id="1470209944682"] .tn-atom { font-size: 60px; }}</style>
+        <div class='t396'>
+            <div class="t396__artboard" data-artboard-recid="523618189" data-artboard-screens="320,480,640,960,1200" data-artboard-height="110" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="50" data-artboard-upscale-res-320="window" data-artboard-height-res-640="70" data-artboard-height-res-960="90">
+                <div class="t396__carrier" data-artboard-recid="523618189"></div>
+                <div class="t396__filter" data-artboard-recid="523618189"></div>
+                <div class='t396__elem tn-elem tn-elem__5236181891470209944682' data-elem-id='1470209944682' data-elem-type='text' data-field-top-value="-6" data-field-left-value="15" data-field-width-value="660" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-2" data-field-left-res-320-value="8" data-field-top-res-480-value="-3" data-field-left-res-480-value="7" data-field-top-res-640-value="-3" data-field-left-res-640-value="6" data-field-top-res-960-value="-4" data-field-left-res-960-value="6">
+                    <div class='tn-atom'field='tn_text_1470209944682'>достижения</div>
+                </div>
+            </div>
+        </div>
+        <script>t_onFuncLoad('t396_initialScale', function () {
 t396_initialScale('523618189');
 });
 t_onReady(function () {
 t_onFuncLoad('t396_init', function () {
 t396_init('523618189');
 });
-});</script><!-- /T396 --></div><div id="rec523680579" class="r t-rec t-rec_pt_0 t-rec_pb_150 t-rec_pb-res-480_90" style="padding-top:0px;padding-bottom:150px; " data-animationappear="off" data-record-type="923" ><!-- t923 --><div class="t923 "><div class="t-slds" style="visibility: hidden;" aria-roledescription="carousel" aria-label="Слайдер"><div class="t-slds__main t-container"><ul class="t-slds__arrow_container"><style type="text/css">#rec523680579 .t-slds__arrow_wrapper:hover .t-slds__arrow-withbg {
-border-color: #e43b2c !important; 
-background-color: rgba(255,255,255,1) !important;
-}</style><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
-type="button" 
-class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
-aria-controls="carousel_523680579" 
-aria-disabled="false" 
-aria-label="Предыдущий слайд"
-style="width: 40px; height: 40px;background-color: rgba(255,255,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 10px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">#rec523680579 .t-slds__arrow_wrapper polyline {
--webkit-transition: stroke ease-in-out .2s;
--moz-transition: stroke ease-in-out .2s;
--o-transition: stroke ease-in-out .2s;
-transition: stroke ease-in-out .2s;
-}
-#rec523680579 .t-slds__arrow_wrapper:hover polyline {
-stroke: #e43b2c !important; }</style><desc>Left</desc><polyline
-fill="none" 
-stroke="#11374e"
-stroke-linejoin="butt" 
-stroke-linecap="butt"
-stroke-width="2" 
-points="1,1 9,9 1,17" 
-/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
-type="button" 
-class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
-aria-controls="carousel_523680579" 
-aria-disabled="false" 
-aria-label="Следующий слайд"
-style="width: 40px; height: 40px;background-color: rgba(255,255,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 10px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Right</desc><polyline
-fill="none" 
-stroke="#11374e"
-stroke-linejoin="butt" 
-stroke-linecap="butt"
-stroke-width="2" 
-points="1,1 9,9 1,17" 
-/></svg></div></button></li> </ul><div class="t-slds__container"> <ul class="t-slds__items-wrapper t-slds_animated-slow" 
-id="carousel_523680579" data-slider-items-in-row="3" data-slider-transition="500" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false"
-aria-live="off"><li class="t-slds__item t-slds__item_active" data-slide-index="1" 
-role="group" 
-aria-roledescription="slide" 
-aria-label="1 из 4"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}"> <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});"
-bgimgfield="li_img__1571907907758"
-></div></div><div class="t923__content"><div class="t923__textwrapper t923__paddingsmall"><div class="t923__title t-name t-name_md" field="li_title__1571907907758" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div><div class="t923__descr t-descr t-descr_xxs" field="li_descr__1571907907758" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div></div></div></div></div></div></div></li><li class="t-slds__item" data-slide-index="2" 
-role="group" 
-aria-roledescription="slide" 
-aria-label="2 из 4"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}"> <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});"
-bgimgfield="li_img__1670348743324"
-></div></div><div class="t923__content"><div class="t923__textwrapper t923__paddingsmall"><div class="t923__title t-name t-name_md" field="li_title__1670348743324" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div><div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348743324" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div></div></div></div></div></div></div></li><li class="t-slds__item" data-slide-index="3" 
-role="group" 
-aria-roledescription="slide" 
-aria-label="3 из 4"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}"> <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});"
-bgimgfield="li_img__1670348744887"
-></div></div><div class="t923__content"><div class="t923__textwrapper t923__paddingsmall"><div class="t923__title t-name t-name_md" field="li_title__1670348744887" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div><div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348744887" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div></div></div></div></div></div></div></li><li class="t-slds__item" data-slide-index="4" 
-role="group" 
-aria-roledescription="slide" 
-aria-label="4 из 4"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}"> <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});"
-bgimgfield="li_img__1670348746247"
-></div></div><div class="t923__content"><div class="t923__textwrapper t923__paddingsmall"><div class="t923__title t-name t-name_md" field="li_title__1670348746247" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div><div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348746247" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div></div></div></div></div></div></div></li></ul></div><ul class="t-slds__bullet_wrapper"><li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1"><button 
-type="button" 
-class="t-slds__bullet_body" 
-aria-label="Перейти к слайду 1" 
-style="background-color: transparent;"></button></li><li class="t-slds__bullet" data-slide-bullet-for="2"><button 
-type="button" 
-class="t-slds__bullet_body" 
-aria-label="Перейти к слайду 2" 
-style="background-color: transparent;"></button></li><li class="t-slds__bullet" data-slide-bullet-for="3"><button 
-type="button" 
-class="t-slds__bullet_body" 
-aria-label="Перейти к слайду 3" 
-style="background-color: transparent;"></button></li><li class="t-slds__bullet" data-slide-bullet-for="4"><button 
-type="button" 
-class="t-slds__bullet_body" 
-aria-label="Перейти к слайду 4" 
-style="background-color: transparent;"></button></li></ul></div></div><script>t_onReady(function() {
+});</script>
+        <!-- /T396 -->
+    </div>
+    <div id="rec523680579" class="r t-rec t-rec_pt_0 t-rec_pb_150 t-rec_pb-res-480_90" style="padding-top:0px;padding-bottom:150px; " data-animationappear="off" data-record-type="923" >
+        <!-- t923 --><div class="t923 "><div class="t-slds" style="visibility: hidden;" aria-roledescription="carousel" aria-label="Слайдер">
+        <div class="t-slds__main t-container">
+            <ul class="t-slds__arrow_container">
+                <style type="text/css">#rec523680579 .t-slds__arrow_wrapper:hover .t-slds__arrow-withbg {
+                    border-color: #e43b2c !important;
+                    background-color: rgba(255,255,255,1) !important;
+                    }
+                </style>
+                <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+                    <button
+                        type="button"
+                        class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"
+                        aria-controls="carousel_523680579"
+                        aria-disabled="false"
+                        aria-label="Предыдущий слайд"
+                        style="width: 40px; height: 40px;background-color: rgba(255,255,255,1);">
+                        <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 10px;">
+                            <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <style type="text/css">#rec523680579 .t-slds__arrow_wrapper polyline {
+                                    -webkit-transition: stroke ease-in-out .2s;
+                                    -moz-transition: stroke ease-in-out .2s;
+                                    -o-transition: stroke ease-in-out .2s;
+                                    transition: stroke ease-in-out .2s;
+                                    }
+                                    #rec523680579 .t-slds__arrow_wrapper:hover polyline {
+                                    stroke: #e43b2c !important; }
+                                </style>
+                                <desc>Left</desc>
+                                <polyline
+                                    fill="none"
+                                    stroke="#11374e"
+                                    stroke-linejoin="butt"
+                                    stroke-linecap="butt"
+                                    stroke-width="2"
+                                    points="1,1 9,9 1,17"/>
+                            </svg>
+                        </div>
+                    </button>
+                </li>
+                <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+                    <button
+                        type="button"
+                        class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"
+                        aria-controls="carousel_523680579"
+                        aria-disabled="false"
+                        aria-label="Следующий слайд"
+                        style="width: 40px; height: 40px;background-color: rgba(255,255,255,1);">
+                        <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 10px;">
+                            <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>Right</desc>
+                                <polyline
+                                    fill="none"
+                                    stroke="#11374e"
+                                    stroke-linejoin="butt"
+                                    stroke-linecap="butt"
+                                    stroke-width="2"
+                                    points="1,1 9,9 1,17"/>
+                            </svg>
+                        </div>
+                    </button>
+                </li>
+            </ul><div class="t-slds__container">
+            <ul class="t-slds__items-wrapper t-slds_animated-slow"
+                id="carousel_523680579" data-slider-items-in-row="3" data-slider-transition="500" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false"
+                aria-live="off">
+                <li class="t-slds__item t-slds__item_active" data-slide-index="1"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="1 из 4">
+                    <div class="t923__width_12 t-margin_auto t-width">
+                        <div class="t923__slds-wrapper t-slds__wrapper t-align_center">
+                            <div class="t923__col t-col t-align_left" style="width: 360px">
+                                <div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3">
+                                    <div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}">
+                                        <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});" bgimgfield="li_img__1571907907758"></div>
+                                    </div>
+                                    <div class="t923__content">
+                                        <div class="t923__textwrapper t923__paddingsmall">
+                                            <div class="t923__title t-name t-name_md" field="li_title__1571907907758" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div>
+                                            <div class="t923__descr t-descr t-descr_xxs" field="li_descr__1571907907758" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="t-slds__item" data-slide-index="2"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="2 из 4">
+                    <div class="t923__width_12 t-margin_auto t-width">
+                        <div class="t923__slds-wrapper t-slds__wrapper t-align_center">
+                            <div class="t923__col t-col t-align_left" style="width: 360px">
+                                <div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3">
+                                    <div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}">
+                                        <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});" bgimgfield="li_img__1670348743324"></div>
+                                    </div>
+                                    <div class="t923__content">
+                                        <div class="t923__textwrapper t923__paddingsmall">
+                                            <div class="t923__title t-name t-name_md" field="li_title__1670348743324" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div>
+                                            <div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348743324" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="t-slds__item" data-slide-index="3"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="3 из 4">
+                    <div class="t923__width_12 t-margin_auto t-width">
+                        <div class="t923__slds-wrapper t-slds__wrapper t-align_center">
+                            <div class="t923__col t-col t-align_left" style="width: 360px">
+                                <div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3">
+                                    <div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}">
+                                        <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__-__resizeb__20x__rectangle_2.jpg' %});" bgimgfield="li_img__1670348744887"></div>
+                                    </div>
+                                    <div class="t923__content">
+                                        <div class="t923__textwrapper t923__paddingsmall">
+                                            <div class="t923__title t-name t-name_md" field="li_title__1670348744887" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div>
+                                            <div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348744887" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="t-slds__item" data-slide-index="4"
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label="4 из 4">
+                    <div class="t923__width_12 t-margin_auto t-width">
+                        <div class="t923__slds-wrapper t-slds__wrapper t-align_center">
+                            <div class="t923__col t-col t-align_left" style="width: 360px">
+                                <div class="t923__wrapper" style="background-color: #e6e9eb;" data-blocks-per-row="3">
+                                    <div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}">
+                                        <div class="t923__bgimg t-bgimg" src="{% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %}" style="background-image:url({% static 'images/tild3865-3932-4564-a234-393462653665__rectangle_2.jpg' %});" bgimgfield="li_img__1670348746247"></div>
+                                    </div><div class="t923__content">
+                                    <div class="t923__textwrapper t923__paddingsmall">
+                                        <div class="t923__title t-name t-name_md" field="li_title__1670348746247" style="color:#0f2939;font-size:22px;font-weight:600;font-family:'Roboto';" >Бронза Олимпиады 2021</div>
+                                        <div class="t923__descr t-descr t-descr_xxs" field="li_descr__1670348746247" style="color:#0f2939;font-size:16px;font-weight:300;font-family:'Roboto';" >Анастасия Смирнова </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+            <ul class="t-slds__bullet_wrapper">
+                <li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                    <button
+                        type="button"
+                        class="t-slds__bullet_body"
+                        aria-label="Перейти к слайду 1"
+                        style="background-color: transparent;">
+                    </button>
+                </li>
+                <li class="t-slds__bullet" data-slide-bullet-for="2">
+                    <button
+                        type="button"
+                        class="t-slds__bullet_body"
+                        aria-label="Перейти к слайду 2"
+                        style="background-color: transparent;">
+                    </button>
+                </li>
+                <li class="t-slds__bullet" data-slide-bullet-for="3">
+                    <button
+                        type="button"
+                        class="t-slds__bullet_body"
+                        aria-label="Перейти к слайду 3"
+                        style="background-color: transparent;">
+                    </button>
+                </li>
+                <li class="t-slds__bullet" data-slide-bullet-for="4">
+                    <button
+                        type="button"
+                        class="t-slds__bullet_body"
+                        aria-label="Перейти к слайду 4"
+                        style="background-color: transparent;">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <script>t_onReady(function() {
 t_onFuncLoad('t_sldsInit', function() {
 t_sldsInit('523680579');
 });
-});</script><style>#rec523680579 .t-slds__bullet_active .t-slds__bullet_body {
-background-color: #222 !important;
-}
-#rec523680579 .t-slds__bullet:hover .t-slds__bullet_body {
-background-color: #222 !important;
-}</style></div><!--[if (IE 8)|(IE 9)]><style>#rec523680579 .t923__slds-wrapper .t923__col{
-display: block;
-margin: 0 auto;
-float: none;
-}</style><![endif]--><script>t_onReady(function () {
+});
+        </script>
+        <style>#rec523680579 .t-slds__bullet_active .t-slds__bullet_body {
+            background-color: #222 !important;
+            }
+            #rec523680579 .t-slds__bullet:hover .t-slds__bullet_body {
+            background-color: #222 !important;
+        }</style>
+    </div><!--[if (IE 8)|(IE 9)]>
+        <style>
+            #rec523680579 .t923__slds-wrapper .t923__col{
+                                display: block;
+                                margin: 0 auto;
+                                float: none;
+                                }
+        </style><![endif]-->
+        <script>t_onReady(function () {
 t_onFuncLoad('t923_init', function () {
 t923_init('523680579');
 });
-});</script></div><div id="rec523706201" class="r t-rec" style=" " data-animationappear="off" data-record-type="396" ><!-- T396 --><style>#rec523706201 .t396__artboard {height: 760px; background-color: #ffffff; }#rec523706201 .t396__filter {height: 760px; }#rec523706201 .t396__carrier{height: 760px; background-position: center center; background-attachment: scroll;background-image: url({% static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %});background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523706201 .t396__artboard {height: 670px;}#rec523706201 .t396__filter {height: 670px;}#rec523706201 .t396__carrier {height: 670px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523706201 .t396__artboard {height: 860px;}#rec523706201 .t396__filter {height: 860px;}#rec523706201 .t396__carrier {height: 860px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523706201 .t396__artboard {height: 750px;}#rec523706201 .t396__filter {height: 750px;}#rec523706201 .t396__carrier {height: 750px;background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523706201 .t396__artboard {height: 830px;}#rec523706201 .t396__filter {height: 830px;}#rec523706201 .t396__carrier {height: 830px;background-attachment: scroll;}} #rec523706201 .tn-elem[data-elem-id="1670334481844"] { z-index: 1; top: 275px;left: calc(50% - 600px + 20px);width: 360px;}#rec523706201 .tn-elem[data-elem-id="1670334481844"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 290px;left: calc(50% - 480px + 10px);width: 300px;}}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 492px;left: calc(50% - 320px + 10px);width: 300px;}}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 464px;left: calc(50% - 240px + 10px);width: 220px;}}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 60px;left: calc(50% - 160px + 710px);width: 140px;}} #rec523706201 .tn-elem[data-elem-id="1670334481851"] { z-index: 2; top: 275px;left: calc(50% - 600px + 420px);width: 360px;}#rec523706201 .tn-elem[data-elem-id="1670334481851"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 290px;left: calc(50% - 480px + 330px);width: 300px;}}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 492px;left: calc(50% - 320px + 330px);width: 300px;}}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 464px;left: calc(50% - 240px + 250px);width: 220px;}}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 466px;left: calc(50% - 160px + 10px);width: 300px;}} #rec523706201 .tn-elem[data-elem-id="1670334481856"] { color: #e6e9eb; z-index: 3; top: 140px;left: calc(50% - 600px + 820px);width: 375px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { color: #e6e9eb; font-size: 18px; font-family: 'Roboto',Arial,sans-serif; line-height: 1.3; font-weight: 300; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 96px;left: calc(50% - 480px + 650px);width: 300px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 200px;left: calc(50% - 320px + 10px);width: 605px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 190px;left: calc(50% - 240px + 10px);width: 451px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 14px; }}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 154px;left: calc(50% - 160px + 9px);width: 290px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 12px; }} #rec523706201 .tn-elem[data-elem-id="1670334481859"] { color: #e6e9eb; z-index: 4; top: 98px;left: calc(50% - 600px + 15px);width: 560px;}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { color: #e6e9eb; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1.55; font-weight: 400; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 60px;left: calc(50% - 480px + 6px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 320px + 7px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 90px; line-height: 1; }}@media screen and (max-width: 639px) {}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 160px + 8px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 60px; }}</style><div class='t396'><div class="t396__artboard" data-artboard-recid="523706201" data-artboard-screens="320,480,640,960,1200" data-artboard-height="760" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="830" data-artboard-upscale-res-320="window" data-artboard-height-res-480="750" data-artboard-height-res-640="860" data-artboard-height-res-960="670"
+});
+        </script>
+    </div>
+
+    <div id="rec523706201" class="r t-rec" style=" " data-animationappear="off" data-record-type="396" ><!-- T396 --><style>#rec523706201 .t396__artboard {height: 760px; background-color: #ffffff; }#rec523706201 .t396__filter {height: 760px; }#rec523706201 .t396__carrier{height: 760px; background-position: center center; background-attachment: scroll;background-image: url({% static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %});background-size: cover;background-repeat: no-repeat;}@media screen and (max-width: 1199px) {#rec523706201 .t396__artboard {height: 670px;}#rec523706201 .t396__filter {height: 670px;}#rec523706201 .t396__carrier {height: 670px;background-attachment: scroll;}}@media screen and (max-width: 959px) {#rec523706201 .t396__artboard {height: 860px;}#rec523706201 .t396__filter {height: 860px;}#rec523706201 .t396__carrier {height: 860px;background-attachment: scroll;}}@media screen and (max-width: 639px) {#rec523706201 .t396__artboard {height: 750px;}#rec523706201 .t396__filter {height: 750px;}#rec523706201 .t396__carrier {height: 750px;background-attachment: scroll;}}@media screen and (max-width: 479px) {#rec523706201 .t396__artboard {height: 830px;}#rec523706201 .t396__filter {height: 830px;}#rec523706201 .t396__carrier {height: 830px;background-attachment: scroll;}} #rec523706201 .tn-elem[data-elem-id="1670334481844"] { z-index: 1; top: 275px;left: calc(50% - 600px + 20px);width: 360px;}#rec523706201 .tn-elem[data-elem-id="1670334481844"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 290px;left: calc(50% - 480px + 10px);width: 300px;}}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 492px;left: calc(50% - 320px + 10px);width: 300px;}}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 464px;left: calc(50% - 240px + 10px);width: 220px;}}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481844"] {top: 60px;left: calc(50% - 160px + 710px);width: 140px;}} #rec523706201 .tn-elem[data-elem-id="1670334481851"] { z-index: 2; top: 275px;left: calc(50% - 600px + 420px);width: 360px;}#rec523706201 .tn-elem[data-elem-id="1670334481851"] .tn-atom {background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 290px;left: calc(50% - 480px + 330px);width: 300px;}}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 492px;left: calc(50% - 320px + 330px);width: 300px;}}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 464px;left: calc(50% - 240px + 250px);width: 220px;}}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481851"] {top: 466px;left: calc(50% - 160px + 10px);width: 300px;}} #rec523706201 .tn-elem[data-elem-id="1670334481856"] { color: #e6e9eb; z-index: 3; top: 140px;left: calc(50% - 600px + 820px);width: 375px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { color: #e6e9eb; font-size: 18px; font-family: 'Roboto',Arial,sans-serif; line-height: 1.3; font-weight: 300; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 96px;left: calc(50% - 480px + 650px);width: 300px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 200px;left: calc(50% - 320px + 10px);width: 605px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 16px; }}@media screen and (max-width: 639px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 190px;left: calc(50% - 240px + 10px);width: 451px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 14px; }}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481856"] {top: 154px;left: calc(50% - 160px + 9px);width: 290px;}#rec523706201 .tn-elem[data-elem-id="1670334481856"] .tn-atom { font-size: 12px; }} #rec523706201 .tn-elem[data-elem-id="1670334481859"] { color: #e6e9eb; z-index: 4; top: 98px;left: calc(50% - 600px + 15px);width: 560px;}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { color: #e6e9eb; font-size: 130px; font-family: 'BebasNeueCyrillic',Arial,sans-serif; line-height: 1.55; font-weight: 400; background-position: center center ;border-color: transparent ;border-style: solid ;}@media screen and (max-width: 1199px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 60px;left: calc(50% - 480px + 6px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 110px; }}@media screen and (max-width: 959px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 320px + 7px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 90px; line-height: 1; }}@media screen and (max-width: 639px) {}@media screen and (max-width: 479px) {#rec523706201 .tn-elem[data-elem-id="1670334481859"] {top: 80px;left: calc(50% - 160px + 8px);}#rec523706201 .tn-elem[data-elem-id="1670334481859"] .tn-atom { font-size: 60px; }}</style><div class='t396'><div class="t396__artboard" data-artboard-recid="523706201" data-artboard-screens="320,480,640,960,1200" data-artboard-height="760" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="830" data-artboard-upscale-res-320="window" data-artboard-height-res-480="750" data-artboard-height-res-640="860" data-artboard-height-res-960="670"
 ><div class="t396__carrier t-bgimg" data-artboard-recid="523706201" src="{% static 'images/tild3266-3933-4539-a666-376262343636__frame_7.svg' %}"></div><div class="t396__filter" data-artboard-recid="523706201"></div><div class='t396__elem tn-elem tn-elem__5237062011670334481844' data-elem-id='1670334481844' data-elem-type='image' data-field-top-value="275" data-field-left-value="20" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="60" data-field-left-res-320-value="710" data-field-width-res-320-value="140" data-field-top-res-480-value="464" data-field-left-res-480-value="10" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="10" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="10" data-field-width-res-960-value="300"
 ><div class='tn-atom' ><img class='tn-atom__img t-img' src="{% static 'images/tild3235-6364-4363-b634-383066613530__rectangle_115.jpg' %}" imgfield='tn_img_1670334481844'></div></div> <div class='t396__elem tn-elem tn-elem__5237062011670334481851' data-elem-id='1670334481851' data-elem-type='image' data-field-top-value="275" data-field-left-value="420" data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1440" data-field-fileheight-value="1360" data-field-top-res-320-value="466" data-field-left-res-320-value="10" data-field-width-res-320-value="300" data-field-top-res-480-value="464" data-field-left-res-480-value="250" data-field-width-res-480-value="220" data-field-top-res-640-value="492" data-field-left-res-640-value="330" data-field-width-res-640-value="300" data-field-top-res-960-value="290" data-field-left-res-960-value="330" data-field-width-res-960-value="300"
 ><div class='tn-atom' ><img class='tn-atom__img t-img' src="{% static 'images/tild3238-3661-4533-b834-383537363634__rectangle_116.jpg' %}" imgfield='tn_img_1670334481851'></div></div> <div class='t396__elem tn-elem tn-elem__5237062011670334481856' data-elem-id='1670334481856' data-elem-type='text' data-field-top-value="140" data-field-left-value="820" data-field-width-value="375" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="154" data-field-left-res-320-value="9" data-field-width-res-320-value="290" data-field-top-res-480-value="190" data-field-left-res-480-value="10" data-field-width-res-480-value="451" data-field-top-res-640-value="200" data-field-left-res-640-value="10" data-field-width-res-640-value="605" data-field-top-res-960-value="96" data-field-left-res-960-value="650" data-field-width-res-960-value="300"
