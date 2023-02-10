@@ -1,14 +1,22 @@
 <p>{{ sport.name }}</p>
 
-<p>{{ d.name }}</p>
+{% for d in discipline %}
+<p><h2>Дисциплина</h2></p>
+<p>имя дисциплины {{ d.name }}</p>
+<p>описание дисциплины{{ d.description }}</p>
+{% endfor %}
 
 {% for p in progress %}
-<p>{{ p.athlete }}</p>
-<p>{{ p.description }}</p>
-<img src="{{MEDIA_URL}}{{p.image.url}}">
+<p>имя атлета {{p.athlete}}</p>
 {% endfor %}
 
 {% for t in trainer %}
 <p> тренер {{ t.name }}</p>
 {% endfor %}
 
+{% for cont in contacts%}
+<p>контакты</p>
+<p>{{ cont.working_hours }}</p>
+<p>{{ cont.telephones }}</p>
+<p>{{ cont.mail }}</p>
+{% endfor %}
