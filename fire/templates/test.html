@@ -7,11 +7,8 @@
 <p>{{ p.description }}</p>
 <img src="{{MEDIA_URL}}{{p.image.url}}">
 {% endfor %}
+
 {% for t in trainer %}
-<p>{{ t.name }}</p>
+<p> тренер {{ t.name }}</p>
 {% endfor %}
-{% for pro in progress %}
-{% for p in pro %}
-{{p}}
-{% endfor %}
-{% endfor %}
+
