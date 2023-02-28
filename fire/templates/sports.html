@@ -1,0 +1,5 @@
+{% for s in sports %}
+<a href="{% url 'sports' s.id %}"> {{ s.name }} </a>
+{% endfor %}
+
+
