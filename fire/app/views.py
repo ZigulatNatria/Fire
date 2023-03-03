@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import *
 from django.views.generic import DetailView, ListView
+from django.http import JsonResponse
 
 # Create your views here.
 def sports(request, sport_id):
@@ -15,10 +16,27 @@ def sports(request, sport_id):
         progress.append(prog)
     trainer = Trainer.objects.filter(sport=sport)
 
+    list_progress = []
+    for d in discipline:
+        name = d.name
+        description = d.description
+        if name not in list_progress:
+            list_progress.append(name)
+        list_progress.append(description)
+        for pp in progress:
+            for p in pp:
+                name_discipline = str(p.discipline_progress)
+                if name_discipline == name:
+                    athlete = p.athlete
+                    descr = p.description
+                    list_progress.append(athlete)
+                    list_progress.append(descr)
+
     context = {'sport': sport,
                'discipline': discipline,
                'progress': progress,
                'trainer': trainer,
+               'list_progress': list_progress,
                'p': p,
                }
     # return render(request, 'test.html', context)
