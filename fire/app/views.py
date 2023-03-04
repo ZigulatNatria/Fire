@@ -18,19 +18,23 @@ def sports(request, sport_id):
 
     list_progress = []
     for d in discipline:
+        dict_progress = {}
         name = d.name
         description = d.description
-        if name not in list_progress:
-            list_progress.append(name)
-        list_progress.append(description)
+        # if name not in list_progress:
+        dict_progress['name_discipline'] = name
+        dict_progress['description_discipline'] = description
         for pp in progress:
             for p in pp:
                 name_discipline = str(p.discipline_progress)
                 if name_discipline == name:
+                    dict_athlete = {}
                     athlete = p.athlete
                     descr = p.description
-                    list_progress.append(athlete)
-                    list_progress.append(descr)
+                    dict_athlete['athlete_progress'] = athlete
+                    dict_athlete['description_progress'] = descr
+                    dict_progress['athlete_info'] = [dict_athlete]
+                    list_progress.append(dict_progress)
 
     context = {'sport': sport,
                'discipline': discipline,
