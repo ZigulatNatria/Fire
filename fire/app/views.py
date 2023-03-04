@@ -16,25 +16,27 @@ def sports(request, sport_id):
         progress.append(prog)
     trainer = Trainer.objects.filter(sport=sport)
 
-    list_progress = []
+    list_progress = []     #Инициализирую список в котором будт схраниться словари
     for d in discipline:
-        dict_progress = {}
+        dict_progress = {}  #Инициализирую словарь для хранения информации по всей дисциплине + прогресс
         name = d.name
         description = d.description
-        # if name not in list_progress:
-        dict_progress['name_discipline'] = name
-        dict_progress['description_discipline'] = description
+        if 'name_discipline' and 'description_discipline' not in dict_progress:  #Проверка на наличие уже существующих ключей
+            dict_progress['name_discipline'] = name
+            dict_progress['description_discipline'] = description
         for pp in progress:
+            list_info = []   #Инициализация списка для хранения словарей о прогрессе
             for p in pp:
-                name_discipline = str(p.discipline_progress)
+                name_discipline = str(p.discipline_progress) #Приводим значение поля к типу строка
                 if name_discipline == name:
-                    dict_athlete = {}
+                    dict_athlete = {}     #Инициализирую словарь информации по прогрессу
                     athlete = p.athlete
                     descr = p.description
                     dict_athlete['athlete_progress'] = athlete
                     dict_athlete['description_progress'] = descr
-                    dict_progress['athlete_info'] = [dict_athlete]
-                    list_progress.append(dict_progress)
+                    list_info.append(dict_athlete)   #Складываю полученный словарь в список
+                    dict_progress['athlete_info'] = list_info #Складываю полученный список в словарь
+        list_progress.append(dict_progress) #Складываю полученный словарь содержащий всю инфу по дисциплине  прогресс в список
 
     context = {'sport': sport,
                'discipline': discipline,
