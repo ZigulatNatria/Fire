@@ -1,6 +1,15 @@
 <p>---------------------------------------------</p>
 {% for list in list_progress %}
-<p>{{list}}</p>
-{% endfor %}
+<p>Название дисциплины {{list.name_discipline}}</p>
+<p>Описание дисциплины {{list.description_discipline}}</p>
+    {% for info in list.athlete_info %}
+<p> Имя атлета {{ info.athlete_progress }} </p>
+<p> Достижение атлета {{ info.description_progress }} </p>
+    {% endfor %}
 <p>---------------------------------------------</p>
+{% endfor %}
 
+
+{% for list in list_progress %}
+{{list}}
+{% endfor %}
