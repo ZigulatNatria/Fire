@@ -47,8 +47,8 @@ def sports(request, sport_id):
                }
     # return render(request, 'test.html', context)
     # return render(request, 'test3.html', context)
-    # return render(request, 'freestyle.html', context)
-    return render(request, 'freestyle_good.html', context)
+    return render(request, 'freestyle2.html', context)
+    # return render(request, 'freestyle_good.html', context)
 
 
 class SportListView(ListView):
